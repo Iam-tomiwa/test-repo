@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+      margin: auto;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .grid-container {
+      grid-column: 2 / 5;
+    }
+
+    .container .flex {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .container .flex-item {
+      flex: 1;
+    }
+
+    .container .grid-container {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1.3fr 1fr 1fr;
+    }
+
+    .container .item-c {
+      grid-column: 1/3;
+    }
+
+    .container .item-g {
+      grid-column: 2/4;
+      grid-row: 3/4;
+    }
+
+    .container .item-f {
+      grid-row: 1/3;
+      grid-column: 3/4;
+    }
+
+    .card {
+      background-color: #f0f0f0;
+      border-radius: 8px;
+      padding: 1rem;
+      min-height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container .item-a {
+      background-color: #faeee2;
+    }
+
+    .container .item-b,
+    .container .item-e {
+      background-color: #ffcc69;
+    }
+
+    .container .item-c,
+    .container .item-g {
+      background-color: #7651dc;
+      color: white;
+    }
+
+    .container .item-d,
+    .container .item-h {
+      background-color: #fff;
+    }
+
+    .container .item-f {
+      background-color: #dcd1fc;
+    }
+
+
+
+    @media (max-width: 420px) {
+
+      .container .grid-container,
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .container {
+        flex-direction: column-reverse;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <section class="flex left">
+      <article class="flex-item card item-a">Create Schedule</article>
+      <article class="flex-item card item-b">Write your content using AI</article>
+    </section>
+
+    <section class="grid-container right">
+      <article class="grid-item card item-c">Social Media</article>
+      <article class="grid-item card item-d">Manage Multiple</article>
+      <article class="grid-item card item-e">Maintain Consistent</article>
+      <article class="grid-item card item-f">Schedule to</article>
+      <article class="grid-item card item-g">Grow Followers</article>
+      <article class="grid-item card item-h">>56%</article>
+    </section>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(./design/Poppins-Regular.ttf);
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  background-color: rgb(250, 246, 246);
+}
+.container {
+  margin: auto;
+  padding: 50px 30px;
+  max-width: 1200px;
+}
+header {
+  text-align: center;
+}
+header p {
+  justify-self: center;
+  max-width: 600px;
+  margin: 0, auto;
+}
+header h2 {
+  font-size: 32px;
+  font-weight: 200;
+}
+header h3 {
+  font-size: 32px;
+  font-weight: 600;
+}
+header p {
+  max-width: 600px;
+  margin: 0, auto;
+  margin-top: 15px;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-top: 60px;
+}
+.box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 25px;
+  /* text-align: right; */
+}
+
+.box img{
+  margin-left: auto;
+  display: block;
+}
+
+.box-text {
+  text-align: left;
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+.box1 {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+.box2 {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+.box3 {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+.box4 {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+.box-container {
+  display: grid;
+  gap: 30px;
+}
+.box1,
+.box4 {
+  align-self: center;
+}
+@media (max-width: 768px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (width <= 768px){
+  
+}
